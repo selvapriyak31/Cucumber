@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: org.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 4, Time elapsed: 8.576 sec <<< FAILURE!
+To validate the login functionality with invalid credentials(To validate the login functionality of shopee application)  Time elapsed: 7.703 sec  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 104.0.5112.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BALAMURALI', ip: '192.168.43.113', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0121DF13+2219795]
+	Ordinal0 [0x011B2841+1779777]
+	Ordinal0 [0x010C423D+803389]
+	Ordinal0 [0x010E64AC+943276]
+	Ordinal0 [0x010E19F0+924144]
+	Ordinal0 [0x010DF179+913785]
+	Ordinal0 [0x011136B9+1128121]
+	Ordinal0 [0x0111331A+1127194]
+	Ordinal0 [0x0110E616+1107478]
+	Ordinal0 [0x010E7F89+950153]
+	Ordinal0 [0x010E8F56+954198]
+	GetHandleVerifier [0x01512CB2+3040210]
+	GetHandleVerifier [0x01502BB4+2974420]
+	GetHandleVerifier [0x012B6A0A+565546]
+	GetHandleVerifier [0x012B5680+560544]
+	Ordinal0 [0x011B9A5C+1808988]
+	Ordinal0 [0x011BE3A8+1827752]
+	Ordinal0 [0x011BE495+1827989]
+	Ordinal0 [0x011C80A4+1867940]
+	BaseThreadInitThunk [0x75ED6A14+36]
+	RtlInitializeExceptionChain [0x77B1A9FF+143]
+	RtlInitializeExceptionChain [0x77B1A9CA+90]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at org.stepdefinition.LoginSteps.the_user_should_open_the_home_page_of_shopee(LoginSteps.java:26)
+	at ?.The user should open the home page of shopee(file:src/test/resources/Features/login.feature:3)
+
